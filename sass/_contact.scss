@@ -1,0 +1,277 @@
+// MAIN BG / WRAPPER
+#contact-jg {
+  margin-top: -10rem;
+  padding-bottom: 15rem;
+  padding-top: 20rem;
+  // height: 60rem;
+  background-size: cover;
+  width: 100%;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba($white-1,.9),
+    rgba($white-1,.9)),
+    url(../img/about-bg1.png);
+  background-position: left center;
+  background-attachment: fixed;
+}
+
+// HEADER / TITLE
+.contact-jg__header {
+  padding-top: 10rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  opacity: 1;
+
+  @media only screen and (max-width: $bp-med) {
+    padding-top: 5rem;
+    justify-content: center;
+  }
+
+  &-title {
+    margin-left: 15rem;
+    opacity: 1 ;
+
+    @media only screen and (max-width: $bp-med) {
+      margin-left: 3rem;
+      margin-left: 0;
+    }
+    
+
+    &-img {
+      opacity: 1;
+      fill: #fdfdfd;
+
+    }
+
+    &-line {
+      height: 2px;
+      width: 9rem;
+      background-color: $black;
+      margin-top: -1.05rem;
+      transform: translateX(17rem);
+      transition: all .3s;
+    }
+
+    .contact-jg__header-title:hover &-line {
+      transform: translateX(13.5rem);
+      transition: all .3s;
+    }
+  }
+}
+
+// Flex Form Contatiner
+.contact__container {
+  padding-top: 14rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  @media only screen and (max-width: $bp-med) {
+    padding-top: 7rem;
+  }
+}
+
+.contact {
+  align-self: center;
+  // width: 50%;
+  // padding: 6rem;
+  width: 70%;
+  background-image: linear-gradient(102deg, 
+                                  rgba(#fff, 1) 0%,
+                                  rgba(#fff, 1) 50%,
+                                  rgba(#fff, .4) 50%) ,
+                          url(../img/form.jpg);
+  background-size: cover;
+  background-position: center center;
+  border-radius: 2px;
+  box-shadow: 0 1.5rem 4rem rgba(#000, .4);
+
+  @media only screen and (max-width: $bp-lrg) {
+    background-image: linear-gradient(102deg, 
+        rgba(#fff, 1) 0%,
+        rgba(#fff, 1) 60%,
+        rgba(#fff, .2) 100%) ,
+        url(../img/form.jpg);
+  }
+
+  @media only screen and (max-width: $bp-med) {
+    background-image: linear-gradient(to right, 
+      rgba(#fff, .8) 0%,
+      rgba(#fff, .8) 100%),
+      url(../img/form.jpg);
+    width: 90%;
+  }
+
+  &__form {
+    width: 50%;
+    padding: 6rem;
+
+    @media only screen and (max-width: $bp-lrg) {
+      width: 65%;
+    }
+    @media only screen and (max-width: $bp-med) {
+      width: 100%;
+    }
+
+  }
+}
+
+.form {
+  font-size: 1.2rem;
+  font-family: $font-primary;
+  letter-spacing: 3.71;
+  line-height: 2rem;
+  color: $grey-3;
+
+  &-header {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    font-family: $font-primary;
+    // font-weight: 200;
+    color: $grey-3;
+  }
+
+  &__group:not(:last-child) {
+      margin-bottom: 2rem;
+  }
+
+  &__input {
+      font-size: 1.2rem;
+      font-family: $font-primary;
+      letter-spacing: 3.71;
+      line-height: 2rem;
+      color: $grey-3;
+
+      padding: 1.5rem 2rem;
+      border-radius: 2px;
+      background-color: rbga($white, 1);
+      border: none;
+      border-bottom: 1px solid $black;
+      width: 90%;
+      display: block;
+      transition: all .3s;
+
+      @media only screen and (max-width: $bp-med) {
+        width: 100%;
+      }
+
+      // @include respond(tab-port) {
+      //     width: 100%;
+      
+
+      &:focus {
+          outline: none;
+          box-shadow: 0 1rem 2rem rgba($black, .3);
+          // border-bottom: 3px solid rgba($black, .8);
+      }
+
+      &::-webkit-input-placeholder {
+        font-size: 1.2rem;
+        font-family: $font-primary;
+        font-weight: 200;
+        letter-spacing: 3px;
+        line-height: 2rem;
+        color: $grey-3;
+        text-transform: uppercase;
+      }
+    }
+
+
+  &__label {
+    font-size: 1.2rem;
+    font-family: $font-primary;
+    letter-spacing: 3px;
+    line-height: 2rem;
+    color: $grey-3;
+    margin-left: 2rem;
+    margin-top: .7rem;
+    display: block;
+    transition: all .3s;
+}
+
+  &__input:placeholder-shown + &__label {
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-4rem);
+  }
+
+  &__btn {
+    background-color: $black;
+    color: $white;
+    font-size: 1.2rem;
+    font-family: $font-primary;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    line-height: 2rem;
+    padding:.7rem 5rem;
+    transition: all .1s;
+
+    &:focus{
+      outline: none;
+      transform: translateY(2px);
+    }
+  }
+}
+
+    // &__radio-group {
+    //     width: 49%;
+    //     display: inline-block;
+
+    //     @include respond(tab-port) {
+    //         width: 100%;
+    //         margin-bottom: 2rem;
+    //     }
+    // }
+
+    // &__radio-input {
+    //     display: none;
+    // }
+    
+    // &__radio-label {
+    //     font-size: $default-font-size;
+    //     cursor: pointer;
+    //     position: relative;
+    //     padding-left: 4.5rem;
+    // }
+
+    // &__radio-button {
+    //     height: 3rem;
+    //     width: 3rem;
+    //     border: 5px solid $color-primary;
+    //     border-radius: 50%;
+    //     display: inline-block;
+    //     position: absolute;
+    //     left: 0;
+    //     top: -.4rem;
+
+    //     &::after {
+    //         content: "";
+    //         display: block;
+    //         height: 1.3rem;
+    //         width: 1.3rem;
+    //         border-radius: 50%;
+    //         position: absolute;
+    //         top: 50%;
+    //         left: 50%;
+    //         transform: translate(-50%, -50%);
+    //         background-color: $color-primary;
+    //         opacity: 0;
+    //         transition: opacity .2s;
+    //     }
+    // }
+
+    // &__radio-input:checked ~ &__radio-label &__radio-button::after {
+    //     opacity: 1;
+    // }
+
+// }
+
+
+
+
+
+

@@ -1,0 +1,115 @@
+// COLOR VARIABLES
+$color-primary: #00DED4;
+$color-primary-dark: #00A69E;
+
+$color-secondary: #101d2c;
+
+
+$pink: #FF3366;
+$pink-dark: #BA265D;
+
+$blue: rgba(11,48,66,.95);
+
+$white: #fff;
+$white-1: #fdfdfd;
+$black: #1D2125;
+
+$grey-1: #eee;
+$grey-2: #4C5A63;
+$grey-3: #b8b8b8;
+
+
+// FONT VARIABLES
+// $font-primary: 'Open Sans', sans-serif;
+$font-primary: 'Raleway', sans-serif;
+$font-display: 'Josefin Sans', sans-serif;
+$content-font: 'Lato', sans-serif;
+$heading-font: 'Montserrat', sans-serif;
+$font: 'Roboto', sans-serif;
+
+// RESPONSIVE BREAKPOINTS
+$bp-xxlrg: 112.5em; //1800px - HD DESKTOP
+$bp-xlrg: 75em; //1200px - HD DESKTOP
+$bp-lrg: 62.5em; //1000px - TAB-LAND
+$bp-med: 56.25em; //900px - TAB-PORT
+$bp-sm: 37.5em; //600 - PHONE
+
+// HEADINGS
+.section-heading {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  font-family: $font-primary;
+  font-size: 2.5rem;
+}
+
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 10px / 16px = 62.5% -> 10px
+
+  // @media only screen and (max-width: $bp-xlrg) {
+  //   font-size: 50%;
+  // }
+}
+
+body {
+  font-family: $font-primary;
+  color: #fff;
+  font-weight: 200;
+  line-height: 1.6;
+  background-color: $white-1;
+}
+
+a:link,
+a:active,
+a:visited {
+  color: $white;
+  text-decoration: none;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  font-size: 1.5rem;
+
+  a {
+    color: $color-primary-dark;
+  }
+}
+// CODE FOR ANIMATED STARS
+/*
+.container:before {
+position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+content: '';
+z-index: 3;
+background: url(../img/stars.png);
+opacity: .1;
+animation: span 180s linear infinite;
+}
+
+@keyframes span {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 0 514px;
+  }
+}
+*/
