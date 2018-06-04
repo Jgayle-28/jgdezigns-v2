@@ -83,6 +83,17 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/img\/at.jpeg": {
+		"ft": 16384,
+		"iS": 9805621,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/img\/at.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/img\/bgpic1.png": {
 		"ft": 32768,
 		"iS": 1469856,
@@ -154,6 +165,17 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
+		"q": 100
+		},
+	"\/img\/halftone1.png": {
+		"ft": 32768,
+		"iS": 1129087,
+		"oA": 0,
+		"oAP": "\/img\/halftone1.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
 		"q": 100
 		},
 	"\/img\/head-bg-mob.png": {
